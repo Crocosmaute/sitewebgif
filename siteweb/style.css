@@ -7,6 +7,7 @@ nav {
 width: 1200px;
 margin-left:auto;
 margin-right:auto;
+text-align: center;
 }
 
 header{
@@ -15,6 +16,8 @@ margin-left:auto;
 height: 200px;
 margin-right:auto;
 display: flex;
+margin-top: 0px;
+margin-bottom: -20px
 }
 
 div#main_container{
@@ -61,19 +64,23 @@ margin-left: auto;
 margin-right: auto;
 background-image:url(image/fond.jpg);
 background-position:center center;
+margin-top: 0px;
 }
 
 ul li {
-float:center;
 list-style: none;
+display: inline-block;
+vertical-align: top;
+margin: 15px;
+margin-top: 10px;
+margin-bottom: -15px;
 }
  
 li a {
 color: #df068c;
 text-decoration: none;
-float: left;
 font-size: 40px;
-padding: 40px;
+margin: 16px;
 }
  
 li a:hover {
@@ -109,11 +116,7 @@ color: #7eb9be;
 -moz-transform: rotate(10deg) scale(1.2);
 -o-transform: rotate(10deg) scale(1.2);
 }
-
-img.clap{
-float: left;
-}
-   
+ 
 .container2{  
 display: -webkit-flex;
 display: flex;
@@ -141,8 +144,13 @@ align-items: flex-start;
 .container3 img{
  max-width: 300px;
  height: 400px;
- align-items: flex-end; 
 }
+
+   
+#dessous {
+align-self: flex-end;
+}
+
 
 .container_loop{
 display: flex;
@@ -163,7 +171,7 @@ width: 350px
 .container_video{
 display: flex;
 align-items: stretch;
-height: 600px;
+height: 400px;
 width: 1200px;
 margin: auto;
 flex-direction: row;
@@ -185,14 +193,17 @@ bottom:50px;
 right:50px;
 }
 
+.stick2 {
+position:fixed;
+background-attachment: fixed;
+z-index:99;
+top:200px;
+left:50px;
+}
+
 
 #melenchon {
 align-self: flex-end;
-}
-   
-#dessous {
-align-self: flex-end;
-height:600px;
 }
 
 #flotte {
@@ -205,4 +216,11 @@ float: right;
 display: inline-block;
 margin-right: 5%;
 width: 400px;
+}
+
+footer{
+background-color: #1c1c1c;
+width:1200px;
+display: flex;
+justify-content: center;
 }
